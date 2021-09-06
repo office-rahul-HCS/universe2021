@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --primary:#000000;
+    --secondary:#ffffff;
+}
+body{
+    font-family: ;
+    background-color: var(--primary);
+}
+header h1{
+    color: var(--secondary);
+}
