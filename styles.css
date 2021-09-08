@@ -4,6 +4,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 :root{
     --primary:#000000;
@@ -30,7 +31,7 @@ body{
     
     justify-content: space-between;
     width: calc(100% - 4rem);
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
     
     
 }
@@ -49,16 +50,42 @@ li{
     
     
 }
+.manu a{
+    /* background-color: aqua; */
+    padding: 1rem 0rem;
+    display: inline-block;
+}
+
+.active::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    border-bottom: 5px solid #ffffff;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+}
+
 .manu ul li{
     margin-left: 4rem;
+    position: relative;
 }
 .manu{
     display: flex;
     
    
 }
-.logo{
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+.nav-end{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-end ul{
@@ -68,31 +95,45 @@ li{
 }
 .nav-end ul li{
     margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav-end ul button{
     background-color: transparent;
     color: #ffffff;
-    padding: 5px 8px 5px 8px;
+    padding: 7px 14px 7px 14px;
     border-radius: .5rem;
     border:1px solid #ffffff;
+
 }
 .abt{
     display: flex;
     justify-content: center;
     padding: 5rem 0px 5rem 0px;
+    position: relative;
 }
 .about-text{
+    font-size: xx-large;
+    font-weight: 800;
     
     margin-top: 10%;
     width: 50%;
 }
 .about-text p{
+    font-size: medium;
+    font-weight: 200;
+    
+    color: #292929d8;
     padding: 15px  90px 15px 0px;
 }
 .about-text button{
     /* new thing */
     padding: 14px;
-    color: #000000;
+    color: #ffffff;
+    background-color: #5A3ADE;
+    border: 1px solid #5A3ADE;
+    border-radius: .5rem 0.5rem 0.5rem 0;
 }
 .about-img{
     width:50%;
@@ -100,6 +141,7 @@ li{
 .newspaper{
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 
 .newspaper ul{
@@ -111,4 +153,20 @@ li{
 }
 .newspaper ul li{
     margin-right: 3rem;
+}
+
+.abt::before{
+    content: url(./Vector.png);
+    position: absolute;
+    right: 0;
+    top: -0%;
+    
+    
+}
+.newspaper::before{
+    content: url(./Vector.png);
+    position: absolute;
+    left: 0;
+    top: -100%;
+    
 }
