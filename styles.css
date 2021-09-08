@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -6,10 +9,106 @@
     --primary:#000000;
     --secondary:#ffffff;
 }
-body{
-    font-family: ;
-    background-color: var(--primary);
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
 }
-header h1{
+body{
+    
+    background-color: var(--secondary);
+}
+.nav {
     color: var(--secondary);
+    border: 1px solid var(--primary);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-top: none;
+    border-radius: 0  0 1rem 1rem;
+    background-color: var(--primary);
+
+    
+    justify-content: space-between;
+    width: calc(100% - 4rem);
+    padding: 1rem 2rem;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+li{
+    list-style: none;
+    color: var(--secondary);
+}
+.manu ul{
+    
+    display: flex;
+    align-items: center;
+    
+    
+}
+.manu ul li{
+    margin-left: 4rem;
+}
+.manu{
+    display: flex;
+    
+   
+}
+.logo{
+    display: flex;
+}
+
+.nav-end ul{
+    margin-top: 7px;
+    display: flex;
+    
+}
+.nav-end ul li{
+    margin-right: 1rem;
+}
+.nav-end ul button{
+    background-color: transparent;
+    color: #ffffff;
+    padding: 5px 8px 5px 8px;
+    border-radius: .5rem;
+    border:1px solid #ffffff;
+}
+.abt{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0px 5rem 0px;
+}
+.about-text{
+    
+    margin-top: 10%;
+    width: 50%;
+}
+.about-text p{
+    padding: 15px  90px 15px 0px;
+}
+.about-text button{
+    /* new thing */
+    padding: 14px;
+    color: #000000;
+}
+.about-img{
+    width:50%;
+}
+.newspaper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.newspaper ul{
+    display: flex;
+     
+    
+    
+
+}
+.newspaper ul li{
+    margin-right: 3rem;
 }
